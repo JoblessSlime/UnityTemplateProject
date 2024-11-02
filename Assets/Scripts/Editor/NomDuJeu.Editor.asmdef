@@ -1,6 +1,6 @@
 {
-    "name": "NomDuJeu.Editor",
-    "rootNamespace": "NomDuJeu.Editor",
+    "name": "ChatRlockHolmes.Editor",
+    "rootNamespace": "ChatRlockHolmes.Editor",
     "references": [],
     "includePlatforms": [
         "Editor"
