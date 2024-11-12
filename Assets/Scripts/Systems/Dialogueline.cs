@@ -9,7 +9,7 @@ public class DialogueLine
 }
 
 [CreateAssetMenu(fileName = "NewDialogue", menuName = "Dialogue System/Dialogue")]
-public class Dialogue : ScriptableObject
+public class Dialogueline : ScriptableObject
 {
     public DialogueLine[] lines;
 }
