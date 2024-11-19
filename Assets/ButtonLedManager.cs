@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -22,7 +23,11 @@ public class ButtonLedManager : MonoBehaviour
         ledStates[2] = false;  // Green
 
         UpdateLedColors();
+        Cursor.visible = true; // Show the cursor
+        Cursor.lockState = CursorLockMode.None; // Ensure the cursor is not locked
+        
     }
+    
 
     // Called when a button is pressed
     public void OnButtonPressed(int buttonIndex)
