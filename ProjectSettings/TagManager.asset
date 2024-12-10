@@ -6,6 +6,7 @@ TagManager:
   tags:
   - canPickUp
   - Interactable
+  - Echelle
   layers:
   - Default
   - TransparentFX
