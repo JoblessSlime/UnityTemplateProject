@@ -322,6 +322,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -2616560190995229488, guid: c48e84d5eec9c7446bfc4d26ee1ce157, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d5c95cde2f88f2a4e8da70736114d14b, type: 2}
     - target: {fileID: 919132149155446097, guid: c48e84d5eec9c7446bfc4d26ee1ce157, type: 3}
       propertyPath: m_Name
       value: pieds_tordue
