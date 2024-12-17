@@ -81,6 +81,7 @@ public class ButtonLedManager : MonoBehaviour
             if (!state) return false;
         }
         ShowWinPopup();
+        StartCoroutine(HidePopupAfterDelay());
         return true;
     }
 

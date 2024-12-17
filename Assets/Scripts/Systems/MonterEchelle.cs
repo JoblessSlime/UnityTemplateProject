@@ -1,3 +1,4 @@
+using ECM2.Examples.FirstPerson;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,6 +8,7 @@ public class MonterEchelle : MonoBehaviour
     public float speed = 2f;
     private bool isInTrigger = false;
     private bool isClimbing = false;
+    public FirstPersonCharacter firstPersonCharacter;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -22,9 +24,10 @@ public class MonterEchelle : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Echelle"))
         {
-            isClimbing = false ;
-            isInTrigger =  false ;
-            this.GetComponent<Rigidbody>().useGravity = true ;
+            isClimbing = false;
+            isInTrigger = false;
+            this.GetComponent<Rigidbody>().useGravity = true;
+            firstPersonCharacter.gravityScale = 1;
         }
     }
 
@@ -37,9 +40,16 @@ public class MonterEchelle : MonoBehaviour
                 Debug.Log("InputDetected");
                 isClimbing = !isClimbing;
                 if (isClimbing)
+                {
                     this.GetComponent<Rigidbody>().useGravity = false;
+                    firstPersonCharacter.gravityScale = 0;
+                    Debug.Log("YAAYYYYYYY");
+                }
                 else
+                {
                     this.GetComponent<Rigidbody>().useGravity = true;
+                    firstPersonCharacter.gravityScale = 1;
+                }
 
             }
         }
