@@ -7,6 +7,7 @@ public class AmongUs : MonoBehaviour
     [SerializeField] private Color selectedColor = Color.blue;
     [SerializeField] private Color correctColor = Color.green;
     public GameObject door;
+    public GameObject engineInside;
     public GameObject winPopup; 
     public float displayDuration = 3f; 
 
@@ -88,6 +89,8 @@ public class AmongUs : MonoBehaviour
             {
                 winPopup.SetActive(true);
                 door.SetActive(false);
+                engineInside.SetActive(true);
+
                 StartCoroutine(HidePopupAfterDelay());
 
             }
